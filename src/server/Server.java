@@ -1,14 +1,15 @@
 package server;
 
-import java.util.ArrayList;
+
 import java.util.List;
+import java.util.Queue;
 
 
 public class Server {
     /** The row and column count at which the matrices will be split. */
     private final int splitpoint;
     /** A list of available workers that are not already in use. */
-    private List idleWorkers = new ArrayList<Worker>();
+    private List idleWorkers = new Queue<Worker>();
 
     public Server(int splitpoint) {
         this.splitpoint = splitpoint;
@@ -26,10 +27,20 @@ public class Server {
             throw new Exception("No idle workers available");
         }
     }
+
+        
     
-    public Matrix multiplyMatrices(Matrix A, Matrix B) {
-        // TODO: Split matrices, distribute to availabe workers.
-        // TODO: reunite solution fragemnts, return solution.
+    private Matrix splitMatrix(){
+
+    }
+
+    private
+
+    /**
+    Server logic is implemented here
+     */
+    public void run(){
+
     }
 
 }

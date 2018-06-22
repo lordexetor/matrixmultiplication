@@ -7,7 +7,7 @@ Divides the matrices in smaller tasks, solves those and then combines them for a
 
 h3. Compile with javac
 
-CMD > cd scr > javac -d ../build client/ClientMain.java client/Matrix.java worker/Worker.java 
+CMD >  > javac -classpath lib/*.jar -d /bin  src/*.java src/client/*.java src/worker/*.java src/server/*.java
 
 
 h3. Execute

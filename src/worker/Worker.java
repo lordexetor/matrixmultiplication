@@ -5,8 +5,12 @@ import client.Matrix;
 public class Worker {
     public Worker() {}
 
+    public void run(){
+        // TODO: 
+    }
+
     /** Returns the result of A x B */
-    public Matrix multiplyMatrices(Matrix A, Matrix B) throws Exception {
+    private Matrix multiplyMatrices(Matrix A, Matrix B) throws Exception {
         if (A.getNumberOfColumns() == B.getNumberOfRows()) {
             //  Solve the matrix.
             Matrix C = new Matrix(A.getNumberOfRows(), B.getNumberOfColumns());
